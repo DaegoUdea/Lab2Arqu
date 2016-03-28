@@ -21,7 +21,7 @@
     <welcome-file-list>
         <welcome-file>faces/index.xhtml</welcome-file>
     </welcome-file-list>
-        <context-param>
+    <context-param>
         <param-name>primefaces.PUBLIC_CAPTCHA_KEY</param-name>
         <param-value>6LeX6xoTAAAAAGcKyCdDIZOflntPtOPc-xuf4hRt</param-value>
     </context-param>
@@ -29,4 +29,10 @@
         <param-name>primefaces.PRIVATE_CAPTCHA_KEY</param-name>
         <param-value>6LeX6xoTAAAAABAvF6pMpJ-4PY0guTlKInPHa2Pp</param-value>
     </context-param>
+    <resource-ref>
+        <res-ref-name>jdbc/lab2Datasource</res-ref-name>
+        <res-type>javax.sql.DataSource</res-type>
+        <res-auth>Container</res-auth>
+        <res-sharing-scope>Shareable</res-sharing-scope>
+    </resource-ref>
 </web-app>
